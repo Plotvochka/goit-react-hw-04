@@ -1,18 +1,18 @@
 .button {
   margin-top: 20px;
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 15px;
+  border: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #5399db;
+  background-color: #bd26bb;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 .button:focus,
 .button:hover {
-  background-color: #2d1985;
+  background-color: #d689d5;
   color: #e4e3e9;
 }

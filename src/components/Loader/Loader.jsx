@@ -1,4 +1,4 @@
-import { Triangle } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 export default function Loader() {
   const wrapperStyle = {
@@ -9,7 +9,7 @@ export default function Loader() {
   };
   return (
     <div>
-      <Triangle
+      <ThreeDots
         visible={true}
         height="80"
         width="80"

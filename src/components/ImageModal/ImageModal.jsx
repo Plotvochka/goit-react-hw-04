@@ -1,5 +1,4 @@
-import ItemGallery from "../ImageCard/ImageCard";
-import styles from "./ImageModal.module.css";
+import css from "./ImageModal.module.css";
 import Modal from "react-modal";
 
 export default function ImageModal({ src, alt, isOpen, onClose }) {
@@ -22,7 +21,7 @@ export default function ImageModal({ src, alt, isOpen, onClose }) {
       onRequestClose={closeModal}
       ariaHideApp={false}
     >
-      <div className={styles.container}>
+      <div className={css.container}>
         <img src={src} alt={alt} />
       </div>
     </Modal>

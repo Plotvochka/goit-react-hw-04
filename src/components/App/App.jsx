@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./App.module.css";
+import css from "./App.module.css";
 import fetchImagesWithTopic from "../Service/image-api";
 import Header from "../Header/Header";
 import ImageGallery from "../ImageGallery/ImageGallery";
@@ -23,7 +23,7 @@ export default function App() {
     if (value.trim() === "") {
       return;
     }
-    async function getImages() {
+    async function getImage() {
       try {
         setLoading(true);
         setError(false);
@@ -37,7 +37,7 @@ export default function App() {
         setLoading(false);
       }
     }
-    getImages();
+    getImage();
   }, [value, page]);
 
   const handleSubmit = (value) => {
@@ -56,7 +56,7 @@ export default function App() {
   return (
     <>
       <Header submitForm={handleSubmit} />
-      <div className={styles.container}>
+      <div className={css.container}>
         {loading && <Loader />}
         {error && <ErrorMessage />}
         {images.length > 0 && (

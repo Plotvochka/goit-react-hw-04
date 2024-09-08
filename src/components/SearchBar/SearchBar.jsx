@@ -1,7 +1,7 @@
 import { Field, Form, Formik } from "formik";
 import toast, { Toaster } from "react-hot-toast";
-import { FcSearch } from "react-icons/fc";
-import styles from "./SearchBar.module.css";
+import { MdImageSearch } from "react-icons/md";
+import css from "./SearchBar.module.css";
 
 export default function SearchBar({ submitForm }) {
   const handleSubmitForm = (values, actions) => {
@@ -16,10 +16,10 @@ export default function SearchBar({ submitForm }) {
   return (
     <>
       <Formik initialValues={{ searchImg: "" }} onSubmit={handleSubmitForm}>
-        <Form autoComplete="off">
-          <FcSearch className={styles.searchIcon} />
+        <Form autoComplete="off" className={css.form}>
+          <MdImageSearch className={css.searchIcon} />
           <Field
-            className={styles.formField}
+            className={css.formField}
             type="text"
             name="searchImg"
             placeholder=" "
